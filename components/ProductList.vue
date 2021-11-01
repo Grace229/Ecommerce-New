@@ -1,0 +1,19 @@
+<template>
+  <div>
+      <div class="grid grid-cols-3 gap-4">
+  <div>1</div>
+  <!-- ... -->
+  <div>9</div>
+</div>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
