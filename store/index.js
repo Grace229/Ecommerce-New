@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import modules from './modules'
-Vue.use(Vuex)
-
-export default new Vuex.Store({
-  modules
+export const state = () => ({
+  counter: 0
 })
+
+export const mutations = {
+  increment (state) {
+    state.counter++
+  }
+}

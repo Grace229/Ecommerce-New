@@ -2,6 +2,12 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    height: {
+      sm: '150px',
+      md: '260px',
+      lg: '340px',
+      xl: '480px',
+     },
     colors: {
       primary: '#001e40',
       secondary: '#e791a1',
