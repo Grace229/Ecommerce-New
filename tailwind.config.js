@@ -4,11 +4,13 @@ module.exports = {
   theme: {
     height: {
       sm: '150px',
-      md: '260px',
-      lg: '340px',
-      xl: '480px',
+      md: '250px',
+      lg: '350px',
+      xl: '450px',
      },
+
     colors: {
+      white: '#fff',
       primary: '#001e40',
       secondary: '#e791a1',
       default: 'rgb(223, 219, 219)',

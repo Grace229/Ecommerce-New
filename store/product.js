@@ -3,8 +3,8 @@ const state = () => ({
   products:[
     {
       id: 1,
-      Name: 'Hoodie',
-      Price: 10000,
+      Name: 'Glow Oil',
+      Price: "10,000",
       imageLink: require('../assets/c13.png'),
       Seller: 'Grace',
       Details:[
@@ -21,7 +21,7 @@ const state = () => ({
     },
     {
       id: 3,
-       Name: 'Bag',
+       Name: 'Face Cream',
       Price: 15000,
       imageLink: require('../assets/c3.png'),
       Seller: 'Grace',
@@ -29,7 +29,7 @@ const state = () => ({
     
   {
       id: 4,
-       Name: 'Shoes',
+       Name: 'Cleanser',
       Price: 15500,
       imageLink: require('../assets/c4.png'),
       Seller: 'Grace',
@@ -37,7 +37,7 @@ const state = () => ({
     },
       {
       id: 5,
-       Name: 'Laptop',
+       Name: 'Hand Cream',
       Price: 350000,
       imageLink: require('../assets/c5.png'),
       Seller: 'Grace',

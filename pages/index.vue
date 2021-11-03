@@ -1,8 +1,12 @@
 <template>
  <div> 
 <Navbar />
-<ProductList :items="products" />
-<CartItems />
+
+
+<ProductList :items="products" /> 
+
+
+
  </div>
 </template>
 
@@ -16,15 +20,21 @@ components:{
    ProductList,
    CartItems,
 },
-data(){
-  return{
 
-  }
-},
+    data() {
+     
+    return{
+
+    }    
+    },
 computed:{
     products() {
-      return this.$store.getters["product/GetProducts"];
+      return this.$store.state.product.products
     },
+     
+}, 
+methods:{
+
 }
 }
 </script>

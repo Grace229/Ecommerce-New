@@ -37,7 +37,34 @@ const state = () => ({
   }
   };
   const mutations = {
-      
+    setCart(state, item) {
+      state.cart.unshift(item)
+      localStorage.setItem("cart", JSON.stringify(state.cart))
+    },
+    // set cart on reload
+    setCartReload(state, item) {
+      state.cart = item
+    },
+    // set cart after removing item
+    setRemoveItemCart(state, item) {
+      state.cart = item
+      localStorage.setItem("cart", JSON.stringify(state.cart))
+    },
+     // set saved product
+     setSavedProducts(state, item) {
+      state.savedProducts = item
+    },
+    // set success message
+    setSuccessAlert (state, item) {
+      state.successAlertMessage = item.successMessage
+      state.showSuccessAlert = item.showSuccess
+    },
+    // set error message
+    setErrorAlert (state, item) {
+      state.errorAlertMessage = item.errorMessage
+      state.showErrrorAlert = item.showError
+    },
+
   };
   const actions = {};
   
@@ -48,4 +75,5 @@ const state = () => ({
       mutations,
       actions
   };
-  
+ 
+ 
